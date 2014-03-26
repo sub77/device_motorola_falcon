@@ -1,5 +1,10 @@
 [
   {
+    "repository":  "SlimRoms/device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch":      "kk4.4"
+  },
+  {
     "repository":  "SlimRoms/device_motorola_qcom-common",
     "target_path": "device/motorola/qcom-common",
     "branch":      "kk4.4"
@@ -17,11 +22,6 @@
   {
     "repository":  "SlimRoms/vendor_motorola",
     "target_path": "vendor/motorola",
-    "branch":      "kk4.4"
-  },
-  {
-    "repository":  "SlimRoms/hardware_qcom_fm",
-    "target_path": "hardware/qcom/fm",
     "branch":      "kk4.4"
   },
   {
