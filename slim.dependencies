@@ -1,12 +1,38 @@
 [
   {
-    "repository":  "SlimRoms/device_motorola_msm8226-common",
-    "target_path": "device/motorola/msm8226-common",
-    "branch":      "lp5.1"
+    "remote":      "github",
+    "branch":      "mm6.0",
+    "repository":  "TeamOrion-Devices/device_motorola_msm8226-common",
+    "target_path": "device/motorola/msm8226-common"
   },
   {
-    "repository":  "SlimRoms/kernel_motorola_msm8226",
-    "target_path": "kernel/motorola/msm8226",
-    "branch":      "lp5.1"
+    "remote":      "github",
+    "branch":      "m6.0",
+    "repository":  "robt77/kernel_motorola_msm8226",
+    "target_path": "kernel/motorola/msm8226"
+  },
+  {
+    "remote":      "github",
+    "branch":      "cm-13.0",
+    "repository":  "TheMuppets/proprietary_vendor_motorola",
+    "target_path": "vendor/motorola"
+  },
+  {
+    "remote":      "github",
+    "branch":      "mm6.0",
+    "repository":  "srisurya95/frameworks_opt_telephony",
+    "target_path": "frameworks/opt/telephony"
+  },
+  {
+    "remote":      "github",
+    "branch":      "mm6.0",
+    "repository":  "srisurya95/packages_services_Telephony",
+    "target_path": "packages/services/Telephony"
+  },
+  {
+    "remote":      "github",
+    "branch":      "mm6.0",
+    "repository":  "srisurya95/packages_providers_TelephonyProvider",
+    "target_path": "packages/providers/TelephonyProvider"
   }
 ]
