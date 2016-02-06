@@ -1,0 +1,28 @@
+From c0fd15dd58329cabaf993aa4aa8e3dc18abd01d6 Mon Sep 17 00:00:00 2001
+From: sub77 <sub77@ymail.com>
+Date: Sat, 6 Feb 2016 06:11:11 +0100
+Subject: [PATCH] 
+ frameworks/base/core/java/android/provider/Settings.java:5861: error: cannot
+ find symbol             CAMERA_GESTURE_DISABLED,             ^   symbol:  
+ variable CAMERA_GESTURE_DISABLED
+
+Change-Id: I13f4ab713d074bdd93e78148e4fa621dbab463ac
+---
+ core/java/android/provider/Settings.java | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/core/java/android/provider/Settings.java b/core/java/android/provider/Settings.java
+index 55241f1..f235e51 100644
+--- a/core/java/android/provider/Settings.java
++++ b/core/java/android/provider/Settings.java
+@@ -5858,7 +5858,6 @@ public final class Settings {
+             MOUNT_UMS_NOTIFY_ENABLED,
+             SLEEP_TIMEOUT,
+             DOUBLE_TAP_TO_WAKE,
+-            CAMERA_GESTURE_DISABLED,
+             ADVANCED_REBOOT
+         };
+ 
+-- 
+1.9.1
+

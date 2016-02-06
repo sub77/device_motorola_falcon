@@ -1,0 +1,53 @@
+From 6f7daed0f8b03b472f2aa634a1d2fdbf30df6d83 Mon Sep 17 00:00:00 2001
+From: sub77 <sub77@ymail.com>
+Date: Sat, 6 Feb 2016 03:28:30 +0100
+Subject: [PATCH] packages/services/Telephony/res/values/styles.xml:163: error:
+ Error retrieving parent for item: No resource found that matches the given
+ name 'android:Theme.Material.DayNight'.
+
+Change-Id: Iad5d4ba10fb0baff3582f9cc508aae37523b583a
+---
+ res/values/styles.xml | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/res/values/styles.xml b/res/values/styles.xml
+index 90996db..c0020f0 100644
+--- a/res/values/styles.xml
++++ b/res/values/styles.xml
+@@ -160,7 +160,7 @@
+         <item name="android:windowCloseOnTouchOutside">true</item>
+     </style>
+ 
+-    <style name="SettingsLight" parent="android:Theme.Material.DayNight">
++    <style name="SettingsLight" parent="android:Theme.Material">
+         <item name="android:windowBackground">@color/phone_settings_background_color</item>
+         <item name="android:windowContentOverlay">@null</item>
+         <item name="android:actionBarStyle">@style/DialtactsActionBarStyle</item>
+@@ -186,13 +186,13 @@
+         <item name="android:textColor">?android:attr/textColorPrimaryInverseDisableOnly</item>
+     </style>
+ 
+-    <style name="NetworkOperatorsSettingsTheme" parent="@android:style/Theme.Material.DayNight">
++    <style name="NetworkOperatorsSettingsTheme" parent="@android:style/Theme.Material">
+         <item name="android:actionBarTheme">@android:style/ThemeOverlay.Material.Dark.ActionBar</item>
+         <item name="android:colorPrimary">@color/network_operators_color_primary</item>
+         <item name="android:colorPrimaryDark">@color/network_operators_color_primary_dark</item>
+     </style>
+ 
+-    <style name="Empty" parent="@android:style/Theme.Material.DayNight">
++    <style name="Empty" parent="@android:style/Theme.Material">
+         <item name="android:windowIsTranslucent">true</item>
+         <item name="android:windowBackground">@android:color/transparent</item>
+         <item name="android:windowContentOverlay">@null</item>
+@@ -265,7 +265,7 @@
+         <item name="android:homeAsUpIndicator">@drawable/ic_back_arrow</item>
+     </style>
+ 
+-    <style name="SimImportTheme" parent="@android:style/Theme.Material.DayNight">
++    <style name="SimImportTheme" parent="@android:style/Theme.Material">
+         <item name="android:actionBarStyle">@style/TelephonyActionBarStyle</item>
+         <item name="android:colorPrimaryDark">@color/dialer_theme_color_dark</item>
+         <item name="android:homeAsUpIndicator">@drawable/ic_back_arrow</item>
+-- 
+1.9.1
+
