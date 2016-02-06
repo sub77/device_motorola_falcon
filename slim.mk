@@ -8,3 +8,9 @@ PRODUCT_RELEASE_NAME := MOTO G
 PRODUCT_NAME := slim_falcon
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+KERNEL_TOOLCHAIN_PREFIX  := arm-cortex_a7-linux-gnueabihf-
+KERNEL_TOOLCHAIN         := "/roms/toolchains/arm-cortex_a7-linux-gnueabihf-linaro_4.9.4-2015.06/bin/"
+
+ANDROID_TOOLCHAIN_PREFIX := arm-cortex_a7-linux-gnueabihf-
+ANDROID_TOOLCHAIN        := "/roms/toolchains/arm-cortex_a7-linux-gnueabihf-linaro_4.9.4-2015.06/bin/"

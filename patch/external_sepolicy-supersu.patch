@@ -1,0 +1,44 @@
+From 4d95e3b1668da381720a39dd90f662ec38363bf7 Mon Sep 17 00:00:00 2001
+From: sub77 <sub77@ymail.com>
+Date: Fri, 5 Feb 2016 22:52:34 +0100
+Subject: [PATCH] Patch to allow SuperSU to run in SELinux enforcing a special
+ thanks to @Chainfire for pointing me to the right places and @imoseyon for
+ helping with the selinux rules
+
+Written By: @BeansTown106
+Keep the @ in my name id like to track the use of this..
+
+Change-Id: I9526a560afa23a8b4ff325859b69e80074acd5e5
+---
+ init.te | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/init.te b/init.te
+index a9c567e..dc0bead 100644
+--- a/init.te
++++ b/init.te
+@@ -71,6 +71,10 @@ allow init self:capability sys_time;
+ 
+ allow init self:capability { sys_rawio mknod };
+ 
++# fix some selinux denials related to supersu
++allow init system_file:file execute_no_trans;
++allow zygote init:unix_stream_socket { read write };
++
+ # Mounting filesystems from block devices.
+ allow init dev_type:blk_file r_file_perms;
+ 
+@@ -127,6 +131,10 @@ allow init security_file:dir { create setattr };
+ # which can be configured on a device-by-device basis if needed.
+ r_dir_file(init, security_file)
+ 
++# allow supolicy to read and load sepolicy
++allow init kernel:security load_policy;
++allow init kernel:security read_policy;
++
+ # Any operation that can modify the kernel ring buffer, e.g. clear
+ # or a read that consumes the messages that were read.
+ allow init kernel:system syslog_mod;
+-- 
+1.9.1
+
