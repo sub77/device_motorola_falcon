@@ -34,5 +34,11 @@
     "branch":      "mm6.0",
     "repository":  "srisurya95/packages_providers_TelephonyProvider",
     "target_path": "packages/providers/TelephonyProvider"
+  },
+  {
+    "remote":      "github",
+    "branch":      "cm-13.0",
+    "repository":  "CyanogenMod/android_external_connectivity",
+    "target_path": "external/connectivity"
   }
 ]
